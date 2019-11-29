@@ -1,0 +1,13 @@
+﻿رمضان‌المبارک/NNP کا/PSP مہینہ/NN آتے/VBF ہی/PRT ہر/JJ مسلمان/NN کی/PSP تمنا/NN ہوتی/VBF ہے/AUXT کہ/SC وہ/PRP روزے/NN رکھے/VBF اور/CC ڈھیر/Q سارا/JJ ثواب/NN کمائے/VBF  ۔/PU  لیکن/SCP اکثر/Q مریض/NN اپنے/APNA مرض/NN کی/PSP طبی/JJ معلومات/NN نہ/NEG رکھنے/VBI کے/PSP سبب/NN اس/PDM ثواب/NN سے/PSP محروم/JJ رہ/VBF جاتے/AUXA ہیں/AUXT  ۔/PU  اگر/SCP اُنہیں/PRP اپنے/APNA مرض/NN کے/PSP متعلق/RB معلومات/NN میسر/NN ہوں/VBF ،/PU  تو/SC وہ/PRP بھی/PRT طبی/JJ ہدایات/NN پر/PSP چلتے/VBF ہوئے/AUXA رمضان‌المبارک/NNP کی/PSP برکات/NN سے/PSP مستفید/NN ہو/VBF سکتے/AUXM ہیں/AUXT  ۔/PU  یہ/PDM مضمون/NN اُنہی/PDM مریضوں/NN کی/PSP رہنمائی/NN کے/PSP لیے/PSP قلم‌بند/JJ کیا/VBF گیا/AUXA  ۔/PU 
+ذیابیطس/NN کے/PSP مریض/NN :/PU  اِس/PDM مرض/NN کے/PSP مریضوں/NN کو/PSP چاہیے/VBF کہ/SC وہ/PRP رمضان/NNP سے/PSP قبل/NN اپنا/APNA طبی/JJ معائنہ/NN کروا/VBF لیں/AUXA  ۔/PU  یوں/RB ڈاکٹر/NN بتا/VBF سکے/AUXM گا/AUXT کہ/SC وہ/PRP روزہ/NN رکھ/VBF سکتے/AUXM ہیں/AUXT یا/CC نہیں/NEG  ۔/PU  مزیدبرآں/SCP روزوں/NN کے/PSP دوران/NN مریضوں/NN کا/PSP طبی/JJ معائنہ/NN اور/CC ٹیسٹ/NN ہر/JJ ہفتے/NN کروانا/VBI بہت/Q ضروری/JJ ہے/VBF  ۔/PU 
+مریض/NN مندرجہ‌ذیل/JJ حالت/NN میں/PSP روزہ/NN توڑ/VBF دے/AUXA :/PU  1/CD  جب/NN شکر/NN کی/PSP سطح/NN ۶۰/CD  سے/PSP کم/Q ہو/VBF جائے/AUXA  ۔/PU 
+جب/NN شکر/NN کی/PSP سطح/NN ۴۰۰/CD  سے/PSP زائد/JJ ہو/VBF جائے/AUXA  ۔/PU 
+وہ/PDM مریض/NN جو/PRR روزہ/NN نہیں/NEG رکھ/VBF سکتے/AUXM :/PU  (/PU  ۱/CD  )/PU  بیس/CD  سال/NN سے/PSP کم/Q عمر/NN وہ/PDM مریض/NN جو/PRR پیدائشی/JJ طور/NN پر/PSP ذیابیطس/NN میں/PSP مبتلا/JJ ہوں/VBF کیونکہ/SC اس/PRP کا/PSP علاج/NN صرف/NN انسولین/NN لینے/VBI سے/PSP ممکن/JJ ہے/VBF  ۔/PU 
+جن/PRR میں/PSP ہیموگلوبن/NN (/PU  اےسی‌ایچ‌بی/NNP )/PU  کی/PSP مقدار/NN ۱۲/CD  سے/PSP زائد/JJ ہو/VBF  ۔/PU 
+(/PU  ۳/CD  )/PU  وہ/PDM مریض/NN جن/PRR میں/PSP گلوکوز/NN کی/PSP کمی/NN باربار/RB ہو/VBF جائے/AUXA  ۔/PU 
+(/PU  ۶/CD  )/PU  جو/PRR شدید/JJ چھوت/NN ،/PU  دل/NN کی/PSP شدید/JJ بیماری/NN ،/PU  پتے/NN میں/PSP پتھری/NN ،/PU  سانس/NN کی/PSP شدید/JJ تکلیف/NN اور/CC گردوں/NN کی/PSP بیماری/NN میں/PSP مبتلا/JJ ہوں/VBF  ۔/PU 
+وہ/PDM مریض/NN جو/PRR روزہ/NN رکھ/VBF سکتے/AUXM ہیں/AUXT :/PU  (/PU  ۱/CD  )/PU  وہ/PDM مریض/NN جن/PRR کی/PSP عمر/NN ۲۰/CD  سال/NN سے/PSP زائد/JJ ہو/VBF  ۔/PU 
+خواتین/NN جن/PRR کی/PSP عمر/NN بیس/CD  سال/NN سے/PSP زائد/JJ ہو/VBF لیکن/CC حاملہ/JJ اور/CC دُودھ/NN پلانے/VBI والی/VALA نہ/NEG ہوں/VBF  ۔/PU 
+جن/PRR کا/PSP وزن/NN معمول/NN کے/PSP مطابق/NN ہو/VBF  ۔/PU 
+ڈاکٹر/NN سید/NN منصور/NNP علی/NNP ملک/NN ،/PU  ماہر/JJ ذیابیطس/NN کے/PSP مطابق/NN مرض/NN میں/PSP مبتلا/JJ مندرجہ‌بالا/JJ تین/CD  قسم/NN کے/PSP مریض/NN روزہ/NN رکھ/VBF سکتے/AUXM ہیں/AUXT ،/PU  شرط/NN یہ/PDM ہے/VBF کہ/SC ان/PRP کا/PSP مرض/NN قابو/NN میں/PSP رہے/VBF اور/CC وہ/PRP غذا/NN اپنے/APNA معالج/NN کے/PSP مشورے/NN سے/PSP لیں/VBF  ۔/PU 
+

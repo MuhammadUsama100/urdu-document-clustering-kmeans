@@ -1,0 +1,36 @@
+﻿دماغ/NN انسانی/JJ جسم/NN کا/PSP سب/Q سے/PSP زیادہ/Q پیچیدہ/JJ
+عضو/NN ہے/VBF  ۔/PU  کسی/PDM سائنسدان/NN نے/PSP ٹھیک/JJ ہی/PRT
+کہا/VBF ہے/AUXT ''/PU  اگر/SC ہمارا/PRS دماغ/NN اتنا/Q سادہ/JJ ہوتا/VBF
+کہ/SC آسانی/NN سے/PSP سمجھ/NN میں/PSP آ/VBF جاتا/AUXA تو/SC
+ہم/PRP خود/PRF اتنے/Q سادہ/JJ ہوتے/VBF کہ/SC تب/NN بھی/PRT
+اسے/PRP سمجھ/VBF ہی/PRT نہ/NEG پاتے/AUXA  ۔/PU  "/PU  انسانی/JJ
+دماغ/NN سمجھنے/VBI کا/PSP دعویٰ/NN کرنے/VBI والے/VALA ماہرین/NN
+کے/PSP سامنے/NN بھی/PRT کبھی‌کبھار/RB ایسے/PDM واقعات/NN آتے/VBF
+ہیں/AUXT کہ/SC وہ/PRP چکرا/VBF کر/SCK رہ/VBF جاتے/AUXA ہیں/AUXT  ۔/PU 
+پچھلے/JJ دنوں/NN برطانیہ/NNP میں/PSP ڈاکٹر/NN صاحبان/NN
+نے/PSP ایک/CD  ایسی/PDM دس/CD  سالہ/JJ لڑکی/NN کا/PSP معاینہ/NN
+کیا/VBF جس/PRR کا/PSP نصف/FR دماغ/NN بالکل/RB ناکارہ/JJ ہو/VBF
+چکا/AUXA ہے/AUXT لیکن/CC وہ/PRP معمول/NN کی/PSP زندگی/NN
+گزار/VBF رہی/AUXP ہے/AUXT  ۔/PU  وہ/PRP سائیکل/NN چلا/VBF
+لیتی/AUXA ہے/AUXT اور/CC سب/Q سے/PSP حیرت‌انگیز/JJ بات/NN
+یہ/PDM کہ/SC اس/PRP کی/PSP دونوں/OD آنکھیں/NN بالکل/RB ٹھیک/JJ
+کام/NN کر/VBF رہی/AUXP ہیں/AUXT  ۔/PU  برطانیہ/NNP کی/PSP
+گلاسکو/NNP یونیورسٹی/NN کے/PSP ماہر/JJ اعصاب/NN ،/PU  ڈاکٹر/NN
+لارس/NNP مک‌لی/NNP کہتے/VBF ہیں/AUXT ''/PU  یہ/PDM معاملہ/NN
+ہماری/PRS سمجھ/NN سے/PSP باہر/NN ہے/VBF کیونکہ/SC ہمارے/PRS
+علم/NN کے/PSP مطابق/NN ایسا/PDM ہونا/VBI تقریباً/RB ناممکن/JJ ہے/VBF  ۔/PU  "/PU  واضح/JJ رہے/VBF ،/PU  ڈاکٹر/NN لارس/NNP ہی/PRT نے/PSP
+لڑکی/NN کے/PSP دماغ/NN کی/PSP عکس‌نگاری/NN (/PU  اسکیننگ/NN
+)/PU  کی/VBF ہے/AUXT  ۔/PU 
+ڈاکٹروں/NN کو/PSP بتایا/VBF گیا/AUXA
+کہ/SC لڑکی/NN پر/PSP تین/CD  سال/NN کی/PSP عمر/NN میں/PSP فالج/NN
+کا/PSP حملہ/NN ہوا/VBF تھا/AUXT  ۔/PU  اس/PDM باعث/NN دماغ/NN
+کے/PSP دائیں/JJ حصے/NN نے/PSP کام/NN کرنا/VBI چھوڑ/VBF دیا/AUXA  ۔/PU  فالج/NN کے/PSP اثرات/NN لڑکی/NN کے/PSP بائیں/JJ حصے/NN
+پر/PSP پڑے/VBF کیونکہ/SC دماغ/NN کا/PSP دایاں/JJ حصہ/NN جسم/NN
+کے/PSP بائیں/JJ حصے/NN کو/PSP کنٹرول/NN کرتا/VBF ہے/AUXT  ۔/PU 
+تاہم/SC یہ/PDM فالج/NN قابل/JJ علاج/NN ثابت/NN ہوا/VBF اور/CC لڑکی/NN
+جلد/RB صحت‌یاب/JJ ہو/VBF کر/SCK زندگی/NN گزارنے/VBI لگی/AUXA  ۔/PU 
+البتہ/SC اس/PRP کے/PSP جسم/NN کا/PSP بایاں/JJ حصہ/NN داہنے/JJ
+حصے/NN کے/PSP مقابلے/NN میں/PSP نسبتاً/RB کمزور/JJ ہو/VBF
+گیا/AUXA  ۔/PU  اس/PDM کمزوری/NN کے/PSP باوجود/RB لڑکی/NN
+بآسانی/RB سائیکل/NN چلا/VBF لیتی/AUXA ہے/AUXT  ۔/PU 
+ ۔/PU 

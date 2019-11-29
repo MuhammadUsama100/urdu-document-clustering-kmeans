@@ -1,0 +1,29 @@
+﻿ایک/CD  ہی/PRT لفظ/NN کے/PSP محاورے/NN
+۱/CD   ۔/PU  سَرآمد/NN :/PU  برگزیدہ/JJ  ۔/PU  برتر/JJ  ۔/PU  حاکم/NN  ۔/PU  سردار/NN
+۲/CD   ۔/PU  سَرفراز/NN :/PU  معزز/JJ  ۔/PU  عالی‌مرتبہ/JJ  ۔/PU  سربلند/JJ
+۳/CD   ۔/PU   سَراَفگندہ/JJ :/PU  سر/NN نیچے/NN کیے/VBF یا/CC جھکائے/VBF ہوئے/AUXA  ۔/PU  پریشان/JJ  ۔/PU  شرمندہ/JJ
+۴/CD   ۔/PU  سَربار/NN :/PU  (/PU  دفتری/JJ اصطلاح/NN )/PU  وہ/PDM رقم/NN جو/PRR قابلِ‌محصول/JJ چیزوں/NN کا/PSP حساب/NN پیش/NN
+نہ/NEG کرنے/VBI پر/PSP بطور/RB جرمانہ/NN وصول/NN کی/VBF جائے/AUXA  ۔/PU  جرمانہ/NN  ۔/PU  گٹھڑی/NN جو/PRR بوجھ/NN کے/PSP اوپر/NN رکھی/VBF جائے/AUXA  ۔/PU 
+۵/CD   ۔/PU  سَرباز/NN :/PU  جان/NN پر/PSP کھیلنے/VBI والا/VALA  ۔/PU  بہادر/JJ  ۔/PU  جنگ/NN کرنے/VBI والا/VALA
+۶/CD   ۔/PU  سرِبالیں/NN :/PU  سرہانے/NN
+۷/CD   ۔/PU  سرِبام/NN :/PU  کوٹھے/NN یا/CC بالاخانے/NN پر/PSP  ۔/PU  لبِ‌بام/NN
+۸/CD   ۔/PU  سَربرآوردہ/JJ :/PU  بڑا/JJ بزرگ/NN معزز/JJ  ۔/PU  نمایاں/JJ  ۔/PU  سردار/NN افسر/NN
+۹/CD   ۔/PU  سَربُریدہ/JJ :/PU  سر/NN کٹا/VBF ہوا/AUXA
+۱۰/CD   ۔/PU  سَربستہ/JJ :/PU  چھُپا/VBF ہوا/AUXA  ۔/PU  پوشیدہ/JJ  ۔/PU  مخفی/JJ
+۱۱/CD   ۔/PU  سَربہ‌فلک/JJ :/PU  بہت/Q اُونچا/JJ یا/CC اُونچی/JJ
+۱۲/CD   ۔/PU  سَربہ‌مُہر/JJ :/PU  بند/JJ کر/VBF کے/SCK مُہر/NN لگایا/VBF ہوا/AUXA  ۔/PU  جسے/PRR سِیل/NN کر/VBF دیا/AUXA گیا/AUXA ہو/AUXT
+۱۳/CD   ۔/PU  سَربہ‌جَیب/JJ :/PU  سر/NN جھکائے/VBF ہوئے/AUXA  ۔/PU  سوچ/NN میں/PSP  ۔/PU  افسردگی/NN کی/PSP حالت/NN میں/PSP
+۱۴/CD   ۔/PU  سَرپیچ/NN :/PU پگڑی/NN پگڑی/NN کے/PSP اوپر/NN کا/PSP چھوٹا/JJ سا/PRT کپڑا/NN  ۔/PU  ایک/CD  قسم/NN کا/PSP زیور/NN جو/PRR پگڑی/NN پر/PSP باندھتے/VBF ہیں/AUXT
+۱۵/CD   ۔/PU  سَررشتہ/NN :/PU  تدبیر/NN  ۔/PU  چارۂکار/NN  ۔/PU  معاملہ/NN  ۔/PU  مقصود/NN محکمہ/NN دفتر/NN
+۱۶/CD   ۔/PU  سَررشتہ‌دار/NN :/PU  میرمنشی/NN ہیڈ‌کلرک/NN
+۱۷/CD   ۔/PU  سرِتسلیم/NN خم/NN کرنا/VBI :/PU  حکم/NN ماننا/VBI  ۔/PU  راضی‌برضا/JJ ہونا/VBI  ۔/PU 
+چند/Q الفاظ/NN کی/PSP تشریح/NN
+۱/CD   ۔/PU  بدَرقَہ/NN :/PU  رہبر/NN  ۔/PU  رہنما/NN  ۔/PU  ہمسفر/NN  ۔/PU  اطبا/NN کی/PSP اصطلاح/NN میں/PSP وہ/PDM دوا/NN جو/PRR کسی/PDM دوا/NN کی/PSP معاون/JJ اور/CC مددگار/JJ ہو/VBF  ۔/PU  مدد/NN  ۔/PU  وسیلہ/NN بدل/NN  ۔/PU  سپاہ/NN  ۔/PU  محافظ/NN  ۔/PU  نگہبان/NN  ۔/PU 
+۲/CD   ۔/PU  باگھ/NN :/PU  شیر/NN ،/PU  چیتا/NN ،/PU  پلنگ/NN  ۔/PU 
+۳/CD   ۔/PU  بال‌ہٹ/NN :/PU  بچوں/NN کی/PSP ضد/NN  ۔/PU 
+۴/CD   ۔/PU  بالمیک/NNP :/PU  سنسکرت/NNP کی/PSP رامائن/NNP کا/PSP مصنف/NN
+۵/CD   ۔/PU  بالیں/NN :/PU  تکیہ/NN ،/PU  سرہانہ/NN  ۔/PU 
+۶/CD   ۔/PU  بان/NN :/PU  عادت/NN ،/PU  خُو/NN ،/PU  خصلت/NN ،/PU  مزاج/NN ،/PU  تیر/NN ،/PU  نظروں/NN کے/PSP تیر/NN  ۔/PU  بقول/RB شاعر/NN ؂/SYM رام/NN کرے/VBF کہیں/NN نیناں/NN نہ/NEG الجھیں/VBF
+اِن/PDM نینن/NN کی/PSP '/PU  بان/NN '/PU  بری/JJ ہے/VBF
+۷/CD   ۔/PU  بانا/NN :/PU  لباس/NN ،/PU  پوشاک/NN ،/PU  وضع/NN ،/PU  وردی/NN ،/PU  وہ/PDM تار/NN جن/PRR سے/PSP کپڑا/NN عرض/NN میں/PSP بنتے/VBF ہیں/AUXT  ۔/PU  ایک/CD  ہتھیار/NN کا/PSP نام/NN جسے/PRR دونوں/OD ہاتھوں/NN سے/PSP پکڑ/VBF کر/SCK لڑائی/NN میں/PSP گھماتے/VBF ہیں/AUXT  ۔/PU 
+ ۔/PU 

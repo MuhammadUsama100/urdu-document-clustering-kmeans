@@ -1,0 +1,32 @@
+﻿سینگ‌دار/JJ مینڈک/NN (/PU  Horned/FF Toad/FF )/PU  :/PU 
+یہ/PDM مینڈک/NN نہیں/NEG چھپکلی/NN ہے/VBF  ۔/PU 
+سکّے/NN والی/VALA پنسل/NN :/PU 
+پنسل/NN میں/PSP سکّہ/NN (/PU  Lead/FF )/PU  نہیں/NEG گریفائٹ/NNP (/PU  کاربن/NNP )/PU  ہوتا/VBF ہے/AUXT  ۔/PU 
+گِنی‌پِگ/NN (/PU  Guinie/FF pig/FF )/PU  :/PU 
+یہ/PDM سٔور/NN نہیں/NEG چوہا/NN ہے/VBF اور/CC ملک/NN گِنی/NNP سے/PSP اس/PRP کا/PSP کوئی/PDM تعلق/NN نہیں/NEG  ۔/PU  یہ/PDM جانور/NN جنوبی‌امریکہ/NNP میں/PSP پایا/VBF جاتا/AUXA ہے/AUXT  ۔/PU 
+دُم‌دار/JJ ستارہ/NN :/PU 
+یہ/PDM ستارہ/NN نہیں/NEG ،/PU  اپنی/APNA قسم/NN کا/PSP ایک/CD  خلائی/JJ جسم/NN ہے/VBF  ۔/PU 
+گنجا/JJ عقاب/NN (/PU  Bald/FF Eagle/FF )/PU  :/PU 
+یہ/PDM عقاب/NN گنجا/JJ نہیں/NEG ہوتا/VBF  ۔/PU  بچپن/NN میں/PSP اس/PRP کے/PSP سر/NN اور/CC گردن/NN پر/PSP سیاہی/NN مائل/JJ بال/NN ہوتے/VBF ہیں/AUXT جو/PRR بالغ/JJ ہونے/VBI پر/PSP سفید/JJ ہو/VBF جاتے/AUXA ہیں/AUXT  ۔/PU 
+کیلے/NN کا/PSP درخت/NN :/PU 
+یہ/PDM درخت/NN نہیں/NEG پودا/NN ہے/VBF  ۔/PU 
+کوالا/NNP ریچھ/NN :/PU 
+یہ/PRP آسٹریلیا/NNP میں/PSP پایا/VBF جاتا/AUXA ہے/AUXT ،/PU  مگر/CC یہ/PDM ریچھ/NN نہیں/NEG کنگرو/NN کی/PSP طرح/NN تھیلی‌دار/JJ جانور/NN ہے/VBF  ۔/PU 
+ریشم/NN کا/PSP کیڑا/NN :/PU 
+کیڑا/NN نہیں/NEG ایک/CD  لاروا/NN ہے/VBF  ۔/PU 
+پریری/NNP کتا/NN (/PU  Prairy/FF dog/FF )/PU  :/PU 
+یہ/PDM کتا/NN نہیں/NEG ایک/CD  قسم/NN کا/PSP چوہا/NN ہے/VBF  ۔/PU 
+انڈین/JJ سیاہی/NN (/PU  Indian/FF Ink/FF )/PU  :/PU 
+ایک/CD  قسم/NN کی/PSP روشنائی/NN ہے/VBF مگر/CC انڈیا/NNP (/PU  بھارت/NNP )/PU  سے/PSP اس/PRP کا/PSP کوئی/PDM تعلق/NN نہیں/NEG  ۔/PU 
+ایس‌اوایس/NN (/PU  S/FF ./PU  O/FF ./PU  S/FF )/PU  :/PU 
+وہ/PDM پیغام/NN جو/PRR ہنگامی/JJ طور/NN پر/PSP دینے/VBI کے/PSP لیے/PSP استعمال/NN ہوتا/VBF ہے/AUXT  ۔/PU  کہا/VBF جاتا/AUXA ہے/AUXT '/PU  سیو/VBF آور/PRS سولز/NN '/PU  (/PU  Save/FF Our/FF Souls/FF )/PU  یعنی/CC '/PU  ہماری/PRS روحیں/NN بچاؤ/VBF '/PU  کا/PSP یہ/PDM مخفف/NN ہے/VBF  ۔/PU  لیکن/SCP اِسے/PRP مورس/NN کوڈ/NN میں/PSP اس/PRP لیے/PSP چنا/VBF گیا/AUXA کہ/SC اِسے/PRP لکھنا/VBI آسان/JJ ہے/VBF یعنی/CC تین/CD  نکتے/NN ،/PU  تین/CD  لکیریں/NN ،/PU  تین/CD  نکتے/NN (/PU  Dots/FF ,/PU 3/CD  Dashes/FF ,/PU 3/CD  Dots/FF 3/CD  )/PU 
+سوڈا/NN واٹر/NN :/PU 
+اس/PRP میں/PSP سوڈا/NN نہیں/NEG بلکہ/CC کاربن‌ڈائی‌آکسائیڈ/NNP گیس/NN موجود/JJ ہوتی/VBF ہے/AUXT  ۔/PU 
+مسٹرڈ/NNP گیس/NN (/PU  Mustard/FF Gas/FF )/PU  :/PU 
+گیس/NN نہیں/NEG ہوتی/VBF اور/CC نہ/NEG ہی/PRT یہ/PDM رائی/NN ہے/VBF  ۔/PU  یہ/PRP اُڑ/VBF جانے/AUXA والا/VALA مائع/NN ہے/VBF  ۔/PU 
+مونگ‌پھلی/NN (/PU  Peanut/FF )/PU  :/PU 
+نٹ/NN یعنی/CC گری‌دار/JJ میوہ/NN نہیں/NEG بلکہ/CC پھلی/NN (/PU  Bean/FF )/PU  یعنی/CC لوبیے/NN کی/PSP طرح/NN کا/PSP دانہ/NN ہے/VBF  ۔/PU  اُردو/NNP میں/PSP اس/PRP کا/PSP نام/NN درست/JJ مگر/CC انگریزی/NNP میں/PSP غلط/JJ ہے/VBF  ۔/PU 
+شش‌ورید/NN (/PU  Pulmonary/FF Vein/FF )/PU  :/PU 
+یہ/PDM ورید/NN (/PU  Vein/FF )/PU  نہیں/NEG بلکہ/CC شریان/NN (/PU  Artery/FF )/PU  ہے/VBF  ۔/PU 
+اننّاس/NN (/PU  Pine/FF Apple/FF )/PU  :/PU 
+ ۔/PU 

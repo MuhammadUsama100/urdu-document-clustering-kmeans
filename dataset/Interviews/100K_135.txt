@@ -1,0 +1,13 @@
+﻿بات/NN یہ/PDM ہے/VBF قاضی/NNP صاحب/NN کہ/SC قازقستان/NNP سے/PSP میزائل/NN رات/NN ہی/PRT کو/PSP داغا/VBF گیا/AUXA تھا/AUXT "/PU  بریگیڈیر/NN صاحب/NN ایک/CD  بار/NN پھر/RB اپنی/APNA بات/NN پوری/JJ نہ/NEG کر/VBF سکے/AUXM  ۔/PU 
+''/PU  لیکن/CC وہ/PRP راستے/NN میں/PSP پٹرول/NN ڈلوانے/VBF بھارت/NNP چلا/VBF گیا/AUXA  ۔/PU  "/PU  قاضی/NNP صاحب/NN نے/PSP طنزیہ/JJ لہجے/NN میں/PSP کہا/VBF  ۔/PU 
+''/PU  قاضی/NNP صاحب/NN !/PU  میزائل/NN میں/PSP پٹرول/NN نہیں/NEG ڈالتے/VBF  ۔/PU  "/PU 
+''/PU  گنے/NN کا/PSP رس/NN ڈالتے/VBF ہوں/AUXM گے/AUXT  ۔/PU  "/PU 
+''/PU  پھر/RB وہی/PDM بات/NN ،/PU  آپ/PRP نے/PSP سائنس/NN نہیں/NEG پڑھی/VBF ،/PU  اس/PRP لیے/PSP آپ/PRP نہیں/NEG سمجھ/NN سکتے/VBF  ۔/PU  میزائل/NN رات/NN ہی/PRT کو/PSP گرا/VBF تھا/AUXT ،/PU  مگر/CC وہ/PRP مختلف/JJ قسم/NN کا/PSP میزائل/NN تھا/VBF  ۔/PU  اس/PRP نے/PSP زمین/NN پر/PSP گرنے/VBI کے/PSP فوراً/RB بعد/NN نہیں/NEG پھٹنا/VBI تھا/AUXT ،/PU  بلکہ/CC "/PU 
+''/PU  اس/PRP نے/PSP زمین/NN پر/PSP گر/VBF کر/SCK پہلے/NN ناچنا/VBI تھا/AUXT تاکہ/SC زلزلہ/NN اس/PRP کا/PSP '/PU  ڈانس/NN '/PU  دیکھنے/VBI چلا/VBF آئے/AUXA  ۔/PU  "/PU 
+''/PU  میزائل/NN نے/PSP زمین/NN کے/PSP اندر/NN گھسنا/VBI اور/CC کئی/Q سو/CD  فٹ/NN کی/PSP گہرائی/NN میں/PSP جا/VBF کر/SCK پھٹنا/VBI تھا/AUXT  ۔/PU  آپ/PRP تو/PRT جانتے/VBF ہیں/AUXT کہ/SC کوہ‌ہندوکش/NNP بلندوبالا/JJ پہاڑوں/NN پر/PSP مشتمل/JJ ہے/VBF  ۔/PU  پہاڑ/NN چیر/VBF کر/SCK سینکڑوں/OD فٹ/NN کی/PSP گہرائی/NN میں/PSP جاتے/VBF ہوئے/AUXA وقت/NN تو/PRT لگتا/VBF ہے/AUXT  ۔/PU  "/PU 
+''/PU  آپ/PRP کہنا/VBI چاہتے/AUXM ہیں/AUXT کہ/SC میزائل/NN ساری/JJ رات/NN زمین/NN کھودتا/VBF اور/CC پتھر/NN توڑتا/VBF رہا/AUXP اور/CC صبح/NN آٹھ/CD  بجے/NN جا/VBF کر/SCK پھٹا/VBF  ۔/PU  "/PU 
+''/PU  جی/INJ ہاں/INJ ،/PU  میں/PRP یہی/PRP کہنا/VBI چاہتا/AUXM ہوں/AUXT  ۔/PU  "/PU 
+''/PU  بیچارہ/JJ تھک/VBF گیا/AUXA ہو/AUXM گا/AUXT ،/PU  اسی/PRP لیے/PSP اس/PRP کا/PSP نشانہ/NN خطا/NN گیا/VBF  ۔/PU  "/PU 
+''/PU  یہ/PRP مجھے/PRP معلوم/NN نہیں/NEG ،/PU  آپ/PRP اس/PDM جگہ/NN زمین/NN کے/PSP اندر/NN گھس/VBF کر/SCK معلوم/NN کر/VBF لیں/AUXA  ۔/PU  "/PU  بریگیڈیر/NN صاحب/NN نے/PSP تنگ/NN آ/VBF کر/SCK کہا/VBF  ۔/PU 
+''/PU  قاضی/NNP صاحب/NN !/PU  آپ/PRP خواہ‌مخواہ/RB بحث/NN کو/PSP طول/NN دے/VBF رہے/AUXP ہیں/AUXT ،/PU  بریگیڈیر/NN صاحب/NN ٹھیک/JJ کہتے/VBF ہیں/AUXT  ۔/PU  "/PU  محبوب/NNP سندھو/NNP نے/PSP کہا/VBF  ۔/PU 
+"/PU  میرا/PRS خیال/NN ہے/VBF تم/PRP نے/PSP بھی/PRT اپنے/APNA کسی/PDM بیٹے/NN کو/PSP بریگیڈیر/NN صاحب/NN کی/PSP کمپنی/NN میں/PSP ملازم/NN کرانا/VBI یا/CC اسے/PRP امریکہ/NNP بھجوانا/VBI ہے/AUXT تبھی/NN ان/PRP کی/PSP ہاں/NN میں/PSP ہاں/NN ملا/VBF رہے/AUXP ہو/AUXT  ۔/PU  "/PU  قاضی/NN صاحب/NN نے/PSP کہا/VBF  ۔/PU 
