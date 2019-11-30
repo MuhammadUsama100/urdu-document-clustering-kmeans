@@ -29,7 +29,7 @@ wstring get_file_contents(string file_path) {
 }
 
 bool is_stop_word(wstring word) {
-	wstring tags[] = {L"PU", L"PSP", L"PDM", L"PRP", L"PRT", L"PRD", L"PRR", L"PRS", L"CC", L"CD", L"SYM",L"AUXT", L"AUXM", L"AUXA", L"APNA", L"VBF", L"VALA", L"NEG", L"SC", L"SCP"};
+	wstring tags[] = {L"PU", L"PSP", L"PDM", L"PRP", L"PRT", L"PRD", L"PRR", L"PRS", L"CC", L"CD", L"SYM",L"AUXT", L"AUXM", L"AUXA", L"APNA", L"VBF", L"VALA", L"NEG", L"SC", L"SCP", L"RB"};
 	for(wstring tag: tags) {
 		if(word.find(tag) != string::npos) return true;
 	}
@@ -37,12 +37,14 @@ bool is_stop_word(wstring word) {
 }
 
 double get_max_tf(StringFrequencyMap& terms) {
-	pair<wstring, double> max = *max_element(terms.begin(), terms.end(), 
+	StringFrequencyMap::iterator max = max_element(terms.begin(), terms.end(), 
 		[](const pair<wstring, double>& p1, const pair<wstring, double>& p2) {
 			return p1.second < p2.second; 
 		}
 	);
-	return max.second;
+	
+	if(max != terms.end())return max->second;
+	return 1;
 }
 
 Doc& generate_tfs(string doc_id, StringFrequencyMap& terms) {
@@ -53,7 +55,7 @@ Doc& generate_tfs(string doc_id, StringFrequencyMap& terms) {
 	}
 
 	Doc *doc = new Doc();
-	doc->doc_id = doc_id;
+	doc->doc_id = doc_id; 
 	doc->terms = terms;
 
 	return *doc;
@@ -74,7 +76,9 @@ void generate_tfidfs(vector<Doc>& docs, StringFrequencyMap& term_idfs) {
 	// Calculating tfidfs
 	vector<Doc>::iterator docs_iter = docs.begin();
 	while(docs_iter != docs.end()) { // Loop over all documents
-		tfidfs_output << i << endl;
+		std::wstring wstr(docs_iter->doc_id.length(), L' ');
+		copy(docs_iter->doc_id.begin(), docs_iter->doc_id.end(), wstr.begin());
+		tfidfs_output << wstr << endl;
 
 		StringFrequencyMap::iterator term_idf_bag_iter = term_idfs.begin();
 		while(term_idf_bag_iter != term_idfs.end()) { // Loop over all terms
@@ -127,13 +131,14 @@ int main() {
 			string file_path = dir_path + "/" + mstr;
 			wstring content = get_file_contents(file_path);
 			
-			StringFrequencyMap doc_tf_bag; // contains term frequencies
+			StringFrequencyMap doc_tf_bag; // contains term frequencies 
 			bool term_found_in_document = false;
 			int n_words = 0;
 
 			wstring::iterator content_iter = content.begin();
 			
 			wstring word;
+			
 
 			// loop over the content
 			while(content_iter != content.end()) {
