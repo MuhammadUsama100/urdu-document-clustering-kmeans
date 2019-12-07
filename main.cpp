@@ -5,6 +5,9 @@
 #include <vector>
 #include <math.h>
 #include <algorithm>
+#include <numeric>
+#include <time.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -14,6 +17,284 @@ typedef struct Doc {
 	string doc_id;
 	StringFrequencyMap terms;
 } Doc;
+
+typedef struct DocData {
+	long double docDistance;
+	string DocPath;  
+
+} DocData;
+
+//  kmeans Algo
+class Kmeans {
+
+public:
+	map <long double, vector <DocData> >  dataCluster ;
+
+	map <long double, vector <DocData> >set_Clusterdata() {
+		return dataCluster;
+	}
+	vector <DocData>  documentDistancing(vector <DocData> data) {
+
+		for (int i = 0;i < data.size(); i++) {
+			vector <long double> newData(data.size());
+			for (int j = 0; j < data.size(); j++) {
+				newData[j] = fabsf(data[i].docDistance - data[j].docDistance);
+			}
+			long double datavalue = accumulate(newData.begin(), newData.end(), 0.00) / newData.size();
+			data[i].docDistance = fabsf(datavalue);
+		}
+		return data;
+
+	}
+	void kmeansClustering(vector<Doc> docs) {
+		vector <DocData> data(docs.size());
+		for (int i = 0; i < docs.size(); i++) {
+			StringFrequencyMap::iterator index = docs[i].terms.begin();
+			long double sum = 0;
+			while (index != docs[i].terms.end()) {
+				sum = sum + index->second;
+				index++;
+			}
+			sum = sum / docs[i].terms.size();
+			DocData docdata;
+			docdata.docDistance = fabsf(sum);
+			docdata.DocPath = docs[i].doc_id;
+			data[i] = (docdata);
+		}
+
+		data = documentDistancing(data);
+
+		int k = this->FindKByAlbowMethord(data);
+		cout << endl;
+		this->formGroupByCalculatingDistance(k, data);
+
+	}
+	long double maxData(vector  <DocData> data) {
+		vector  <long double>  tempDocDistance(data.size());
+		for (int i = 0; i < data.size(); i++) {
+			tempDocDistance[i] = data[i].docDistance;
+
+		}
+		//cout << "usama" <<*max_element(tempDocDistance.begin(), tempDocDistance.end());
+		return  *max_element(tempDocDistance.begin(), tempDocDistance.end());
+
+	}
+	long double minData(vector  <DocData> data) {
+		vector  <long double>  tempDocDistance(data.size());
+		for (int i = 0; i < data.size(); i++) {
+			tempDocDistance[i] = data[i].docDistance;
+		}
+		return  *min_element(tempDocDistance.begin(), tempDocDistance.end());
+
+	}
+
+
+	// check For all Possible  Clusters 
+	long double  checkCluster(vector <long double> k, vector <DocData>  data) {
+		long double  sum = 0;
+		for (int i = 0; i < data.size(); i++) {
+			long double distanceOfDataAndk = maxData(data);
+			//cout << distanceOfDataAndk << " "; 
+			for (int j = 0; j < k.size(); j++) {
+				if (distanceOfDataAndk > pow(fabsf(k[j] - data[i].docDistance), 2)) {
+					distanceOfDataAndk = pow(fabsf(k[j] - data[i].docDistance), 2);
+				}
+			}
+			sum = sum + distanceOfDataAndk;
+			//cout << sum; 
+		}
+		return sum;
+	}
+
+	// check for right number of clusters 
+	int  FindKByAlbowMethord(vector <DocData> data) {
+		int NumClusters = data.size() / 2;
+
+		vector <long double> clusters(NumClusters);
+		srand(time(NULL));
+
+		// random  point identification 
+		vector <long double> numClustersK;
+		for (int i = 0; i < NumClusters; i++) {
+			numClustersK.push_back(data[rand() % (data.size() - 1)].docDistance);
+			clusters[i] = checkCluster(numClustersK, data);
+			//cout  << clusters[i] << "  ";
+		}
+
+		// real value of k   means number of cluster that are formed in real chosen by try error 
+		int realValueOfK = 0;
+
+
+		// (f1 - f-1) / 2h
+		cout << endl;
+
+
+		for (int i = 0;i < clusters.size(); i++) cout << data[i].docDistance << endl;
+
+		vector <long double> clustersK(clusters.size());
+		for (int i = 1; i < clusters.size(); i++) {
+			clustersK[i] = (clusters[i] - clusters[i - 1]) / 2;
+		}
+
+		//double maxvalue = *max_element(clustersK.begin(), clustersK.end());
+		//cout << "max  : " << maxvalue <<endl  ;
+		//for (int i = 0; i < clustersK.size(); i++) cout << clustersK[i] << endl;  
+
+		//double changeinterval = clustersK[0] ;
+		//for (int i = 1; i < clustersK.size(); i++) {
+			//if (clustersK[i] == maxvalue)  realValueOfK = i;
+		//	if (changeinterval / 1.5 <= clustersK[i])  realValueOfK ++;
+		//	changeinterval = clustersK[i]; 
+
+		//}
+
+		cout << " K : " << realValueOfK;
+		realValueOfK = 15; //
+		return realValueOfK;
+	}
+	
+	//  measure the distances  , k  =  number of clusters 
+	void formGroupByCalculatingDistance(int k, vector <DocData> data) {
+		// min /  max value  
+		long double minvalue = minData(data);
+		long double maxvalue = maxData(data);
+		cout << "Data points : " << minvalue << " " << maxvalue << endl;
+
+		// random clusters 
+		srand(time(NULL));
+		map <long double, vector <DocData>  > clustersFormed;
+
+
+		// centrioid vector 
+		vector <long double>  centrioid(k);
+
+		// random centroids vector  issue for size hence -1 is suqested 
+		for (int i = 0; i < centrioid.size();i++) {
+			// check
+			centrioid[i] = fmod(rand() , maxvalue)  + minvalue;
+			//cout << centrioid[i]; 
+			vector <DocData> vector;
+			clustersFormed[centrioid[i]] = vector;
+
+		}
+
+	
+		// calculating groups   	
+		for (int i = 0;i < data.size(); i++) {
+			long double  minDistance = data[0].docDistance;
+			long double selectedCentroid = 0;
+			for (int j = 0; j < centrioid.size(); j++) {
+				if (fabsf(data[i].docDistance - centrioid[j]) < minDistance) {
+					minDistance = fabsf(data[i].docDistance - centrioid[j]);
+					selectedCentroid = centrioid[j];
+				}
+			}
+			clustersFormed[selectedCentroid].push_back(data[i]);
+
+		}
+
+
+		//cout <<"First check : " << clustersFormed.size() << endl;
+		clustersFormed = repositionCentroid(clustersFormed);
+		//cout << "First check : " << clustersFormed.size() << endl;
+		clustersFormed = reGrouping(clustersFormed);
+
+		//cout <<"before : " <<clustersFormed.size();
+		convergence(clustersFormed);
+		map <long double, vector <DocData> >  ::iterator  index = clustersFormed.begin();
+		index = clustersFormed.begin();
+
+		while (index != clustersFormed.end()) {
+			cout << endl  <<"index" << " " << index->first <<endl << endl << "value ";
+			for (int i = 0; i < index->second.size(); i++) cout << " {" <<  index->second[i].DocPath << " "<< index->second[i].docDistance <<" }";
+			cout << endl;
+			index++;
+
+		}
+		this->dataCluster = clustersFormed;
+
+	}
+	long double FindSumOfVector(vector <DocData>  clustersFormed) {
+		vector  <long double>  tempDocDistance(clustersFormed.size());
+		for (int i = 0; i < clustersFormed.size(); i++) {
+			tempDocDistance[i] = clustersFormed[i].docDistance;
+		}
+		return accumulate(tempDocDistance.begin(), tempDocDistance.end() , 0.00 );
+	}
+
+	bool checkIfNewGroupingDone(map  <long double, vector <DocData> > clustersFormed) {
+
+		map <long double, vector <DocData> >  ::iterator  index = clustersFormed.begin();
+		while (index != clustersFormed.end()) {
+			long double average = FindSumOfVector(index->second) / index->second.size();
+				//cout << average   << " " << index->first << endl  ;
+			//cout << "check" << fabsf(index->first - average) << endl; 
+			if (fabsf(index->first - average) > 0.0000000000000000000000001 ) return  true;
+			index++;
+		}
+		return false;
+	}
+
+
+	// convergence
+	void convergence(map  <long double, vector <DocData> > & clustersFormed) {
+		
+		while (checkIfNewGroupingDone(clustersFormed)) {
+			cout << "usama1";
+			clustersFormed = repositionCentroid(clustersFormed);
+			clustersFormed = reGrouping(clustersFormed);
+		}
+
+		
+		cout << "usama"; 
+	}
+
+	// there might be issue in float in line 126
+	map <long double, vector <DocData> > reGrouping(map  <long double, vector <DocData> > clustersFormed) {
+		map <long double, vector <DocData>  > newclustersFormed ;
+		map <long double, vector <DocData> >  ::iterator  index = clustersFormed.begin();
+		
+		while (index != clustersFormed.end()) {
+			for (int i = 0; i < index->second.size(); i++) {
+				long double minDistance = 100000000;
+				long double selectedCentroid = 0;
+				map <long double, vector <DocData> >  ::iterator  count = clustersFormed.begin();
+				while (count != clustersFormed.end()) {
+					if (fabsf(index->second[i].docDistance - count->first) < minDistance) {
+						minDistance = fabsf(index->second[i].docDistance - count->first);
+						selectedCentroid = count->first;
+					}
+					count++;
+				}
+
+				newclustersFormed[selectedCentroid].push_back(index->second[i]);
+			}
+			index++;
+		}
+		return newclustersFormed;
+	}
+
+
+	// Re calculation of Centroid
+	map <long double, vector <DocData> >  repositionCentroid(map  <long double, vector <DocData> > clustersFormed) {
+		map <long double, vector <DocData> >  ::iterator  index = clustersFormed.begin();
+
+		map <long double, vector <DocData> > newcluster;
+		while (index != clustersFormed.end()) {
+			//check
+			double average = FindSumOfVector(index->second) / index->second.size(); 
+			newcluster[average] = index->second;
+			index++;
+		}
+		return newcluster;
+	}
+
+
+};
+
+
+
+//  end Kmeans 
 
 wstring get_file_contents(string file_path) {
 	wifstream file(file_path, ios::binary);
@@ -183,6 +464,15 @@ int main() {
 	generate_tfidfs(docs, term_idf_bag);
 
 	// perform k-means on docs vector
+	cout << "Calculating Kmeans...\n" << endl;
+	Kmeans  kmeans;  
+	kmeans.kmeansClustering(docs);
+	//areeb use this function for geting maps for visualiztion 
+	//kmeans.get_Clusterdata();
+	//i will improve kmeans later and will do code cleaning later please donot make changes in kmeans part xd
+
+
+
 
 	cout << "Done.\n";
 
