@@ -52,10 +52,11 @@ public:
 			StringFrequencyMap::iterator index = docs[i].terms.begin();
 			long double sum = 0;
 			while (index != docs[i].terms.end()) {
-				sum = sum + index->second;
+				sum = sum + (index->second*index->second);
 				index++;
 			}
-			sum = sum / docs[i].terms.size();
+			//sum = sum / docs[i].terms.size();
+			sum = sqrt(sum);
 			DocData docdata;
 			docdata.docDistance = fabsf(sum);
 			docdata.DocPath = docs[i].doc_id;
@@ -379,6 +380,16 @@ void generate_tfidfs(vector<Doc>& docs, StringFrequencyMap& term_idfs) {
 	tfidfs_output.close();
 }
 
+long double doc_distance(Doc d1, Doc d2) {
+	vector<long double> res;
+
+	for(pair<wstring, double> el: d1.terms) {
+		res.push_back(pow(d1.terms[el.first] - d2.terms[el.first], 2));
+	}
+
+	return sqrt(accumulate(res.begin(), res.end(), 0.00));
+}
+
 int main() {
 	ifstream folder_names_stream("dataset/foldernames.txt");
 	
@@ -465,14 +476,34 @@ int main() {
 
 	// perform k-means on docs vector
 	cout << "Calculating Kmeans...\n" << endl;
-	Kmeans  kmeans;  
+	/*Kmeans  kmeans;  
 	kmeans.kmeansClustering(docs);
-	//areeb use this function for geting maps for visualiztion 
-	//kmeans.get_Clusterdata();
-	//i will improve kmeans later and will do code cleaning later please donot make changes in kmeans part xd
+	
+	map<long double, vector<DocData>> cluster = kmeans.dataCluster;
 
+	int cluster_count = 0;
+	map<long double, vector<DocData>>::iterator cluster_it = cluster.begin();
+	while(cluster_it != cluster.end()) {
+		int doc_count = 0;
+		cout << "Cluster " << cluster_count++ << ": \n";
+		vector<DocData>::iterator docdata_it = cluster_it->second.begin();
+		while(docdata_it != cluster_it->second.end()) {
+			cout << doc_count++ << ": " << docdata_it->DocPath << "\n";
+			docdata_it++;
+		}
+		cluster_it++;
+	}*/
 
-
+	for(Doc d: docs) {
+		cout << d.doc_id << ": " << endl;
+		for(Doc d2: docs) {
+			cout << d2.doc_id << ": ";
+			if(d.doc_id != d2.doc_id) {
+				cout << doc_distance(d, d2) << endl;
+			}
+		}
+		cout << endl;
+	}
 
 	cout << "Done.\n";
 
