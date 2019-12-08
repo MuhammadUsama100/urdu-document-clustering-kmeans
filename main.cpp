@@ -52,10 +52,10 @@ public:
 			StringFrequencyMap::iterator index = docs[i].terms.begin();
 			long double sum = 0;
 			while (index != docs[i].terms.end()) {
-				sum = sum + index->second ; // taking avg of each freq value and representing it as a doc data frequency 
+				sum = sum + pow(index->second,2) ; // square of terms 
 				index++;
 			}
-			sum =sum / docs[i].terms.size();
+			//sum =sum / docs[i].terms.size();
 			DocData docdata; 
 			docdata.docDistance = fabsf(sum);
 			docdata.DocPath = docs[i].doc_id;
