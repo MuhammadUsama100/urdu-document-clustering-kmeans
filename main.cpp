@@ -30,11 +30,11 @@ class Kmeans {
 public:
 	map <long double, vector <DocData> >  dataCluster ;
 
-	map <long double, vector <DocData> >set_Clusterdata() {
+	map <long double, vector <DocData> >get_Clusterdata() {
 		return dataCluster;
 	}
+	// calculating distance from each doc 
 	vector <DocData>  documentDistancing(vector <DocData> data) {
-
 		for (int i = 0;i < data.size(); i++) {
 			vector <long double> newData(data.size());
 			for (int j = 0; j < data.size(); j++) {
@@ -52,11 +52,11 @@ public:
 			StringFrequencyMap::iterator index = docs[i].terms.begin();
 			long double sum = 0;
 			while (index != docs[i].terms.end()) {
-				sum = sum + index->second;
+				sum = sum + index->second ; // taking avg of each freq value and representing it as a doc data frequency 
 				index++;
 			}
-			sum = sum / docs[i].terms.size();
-			DocData docdata;
+			sum =sum / docs[i].terms.size();
+			DocData docdata; 
 			docdata.docDistance = fabsf(sum);
 			docdata.DocPath = docs[i].doc_id;
 			data[i] = (docdata);
@@ -64,9 +64,9 @@ public:
 
 		data = documentDistancing(data);
 
-		int k = this->FindKByAlbowMethord(data);
+		int k = this->FindKByAlbowMethord(data); // there would be some changes 
 		cout << endl;
-		this->formGroupByCalculatingDistance(k, data);
+		this->formGroupByCalculatingDistance(k, data); // working fine 
 
 	}
 	long double maxData(vector  <DocData> data) {
@@ -129,7 +129,7 @@ public:
 		cout << endl;
 
 
-		for (int i = 0;i < clusters.size(); i++) cout << data[i].docDistance << endl;
+		//for (int i = 0;i < clusters.size(); i++) cout << data[i].docDistance << endl;
 
 		vector <long double> clustersK(clusters.size());
 		for (int i = 1; i < clusters.size(); i++) {
