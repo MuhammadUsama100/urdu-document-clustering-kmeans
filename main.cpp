@@ -161,7 +161,6 @@ public:
 			vector <DocData> vector;
 			clustersFormed[centrioid[i]] = vector;
 		}
-
 		// calculating groups   	
 		for (int i = 0;i < data.size(); i++) {
 			long double  minDistance = data[0].docDistance;
@@ -498,6 +497,14 @@ int main() {
 	*/
 	Kmeans  kmeans; 
 	kmeans.kmeansClustering(doc_distances);
+
+	for(pair<string, vector<DocData>> p: doc_distances) {
+		cout << p.first << ": " << endl;
+		for(DocData doc_data: p.second) {
+			cout << doc_data.DocPath << ": " << doc_data.docDistance << endl;
+		}
+	}
+	
 
 	cout << "Done.\n";
 
