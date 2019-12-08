@@ -20,7 +20,7 @@ typedef struct Doc {
 
 typedef struct DocData {
 	long double docDistance;
-	string DocPath;  
+	string DocPath;
 
 } DocData;
 
@@ -164,7 +164,6 @@ public:
 		srand(time(NULL));
 		map <long double, vector <DocData>  > clustersFormed;
 
-
 		// centrioid vector 
 		vector <long double>  centrioid(k);
 
@@ -175,9 +174,7 @@ public:
 			//cout << centrioid[i]; 
 			vector <DocData> vector;
 			clustersFormed[centrioid[i]] = vector;
-
 		}
-
 	
 		// calculating groups   	
 		for (int i = 0;i < data.size(); i++) {
@@ -274,7 +271,6 @@ public:
 		return newclustersFormed;
 	}
 
-
 	// Re calculation of Centroid
 	map <long double, vector <DocData> >  repositionCentroid(map  <long double, vector <DocData> > clustersFormed) {
 		map <long double, vector <DocData> >  ::iterator  index = clustersFormed.begin();
@@ -291,8 +287,6 @@ public:
 
 
 };
-
-
 
 //  end Kmeans 
 
@@ -474,7 +468,7 @@ int main() {
 	generate_tfidfs(docs, term_idf_bag);
 
 	// perform k-means on docs vector
-	cout << "Calculating Kmeans...\n" << endl;
+	//cout << "Calculating Kmeans...\n" << endl;
 	/*Kmeans  kmeans;  
 	kmeans.kmeansClustering(docs);
 	
@@ -493,16 +487,30 @@ int main() {
 		cluster_it++;
 	}*/
 
-	for(Doc d: docs) {
-		cout << d.doc_id << ": " << endl;
-		for(Doc d2: docs) {
-			cout << d2.doc_id << ": ";
-			if(d.doc_id != d2.doc_id) {
-				cout << doc_distance(d, d2) << endl;
-			}
+	cout << "Calculating inter document distances...\n" << endl;
+
+	vector<Doc> test_docs(docs.begin(), docs.begin()+70);
+
+	map<string, vector<DocData>> doc_distances;
+	vector<DocData> distances;
+	for(Doc d: test_docs) {
+		distances.clear();
+		for(Doc d2: test_docs) {
+			DocData doc_data;
+			doc_data.DocPath = d2.doc_id;
+			doc_data.docDistance = doc_distance(d, d2);
+			distances.push_back(doc_data);
 		}
-		cout << endl;
+		doc_distances[d.doc_id] = distances;
 	}
+
+	for(pair<string, vector<DocData>> p: doc_distances) {
+		cout << p.first << ": " << endl;
+		for(DocData doc_data: p.second) {
+			cout << doc_data.DocPath << ": " << doc_data.docDistance << endl;
+		}
+	}
+	
 
 	cout << "Done.\n";
 
