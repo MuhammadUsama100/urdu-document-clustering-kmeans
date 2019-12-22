@@ -21,7 +21,7 @@ typedef struct Doc {
 typedef struct DocData {
 	long double docDistance;
 	string DocPath;
-
+	
 } DocData;
 
 //  kmeans Algo
@@ -29,7 +29,7 @@ class Kmeans {
 
 public:
 	map <long double, vector <DocData> >  dataCluster;
-
+	vector <long double> elbowMethord; 
 	map <long double, vector <DocData> >get_Clusterdata() {
 		return dataCluster;
 	}
@@ -108,19 +108,20 @@ public:
 		}
 
 		// real value of k   means number of cluster that are formed in real chosen by try error 
-		int realValueOfK = 0;
+		int realValueOfK = 1;
 
 
 		// (f1 - f-1) / 2h
 		cout << endl;
 
 
-		//for (int i = 0;i < clusters.size(); i++) cout << data[i].docDistance << endl;
-
-		vector <long double> clustersK(clusters.size());
+		for (int i = 0;i < clusters.size(); i++) cout << clusters[i] << endl;
+		this->elbowMethord = clusters; 
 		for (int i = 1; i < clusters.size(); i++) {
-			clustersK[i] = (clusters[i] - clusters[i - 1]) / 2;
+			if (fabsf(clusters[i] - clusters[i - 1]) > 500) realValueOfK++;
+			else break;
 		}
+
 
 		//double maxvalue = *max_element(clustersK.begin(), clustersK.end());
 		//cout << "max  : " << maxvalue <<endl  ;
@@ -134,8 +135,9 @@ public:
 
 		//}
 
+
 		cout << " K : " << realValueOfK;
-		realValueOfK = 8; //
+		//realValueOfK = 6; //
 		return realValueOfK;
 	}
 
@@ -440,7 +442,7 @@ int main() {
 
 	calculate_idfs(n_docs, term_idf_bag);
 
-	cout << "No of terms: " << term_idf_bag.size() << endl;
+	cout << "No of tederms: " << term_idf_bag.size() << endl;
 	cout << "No of docs: " << docs.size() << endl;
 
 	cout << "Calculating tfidfs...\n";
@@ -468,7 +470,7 @@ int main() {
 
 	cout << "Calculating inter document distances...\n" << endl;
 
-	vector<Doc> test_docs(docs.begin(), docs.begin() + 70 );
+	vector<Doc> test_docs(docs.begin(), docs.end());
 
 	map<string, vector<DocData>> doc_distances;
 	vector<DocData> distances;
@@ -493,6 +495,8 @@ int main() {
 	cout << "Calculating Kmeans...\n" << endl;
 	Kmeans  kmeans; 
 	kmeans.kmeansClustering(doc_distances);
+	//kmeans.elbowMethord;  to get curve that decides the number of clusters 
+	//kmeans.dataCluster; to get clusters in data 
 
 	
 	
