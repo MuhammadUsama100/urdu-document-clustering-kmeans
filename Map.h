@@ -2,7 +2,7 @@
 
 #ifndef MAP_H
 #define MAP_H
-#include <utility>
+#include<stack>
 using namespace std;
 
 template<class K, class V>
@@ -46,6 +46,41 @@ class Map {
 private:
 	MapNode<K, V>* root;
 
+	class Iterator : public std::iterator<std::bidirectional_iterator_tag, K, V> {
+	private:
+		MapNode<K, V>* current;
+		std::stack<MapNode<K, V>*> store_nodes;
+	public:
+		Iterator(MapNode<K, V>* root) {
+			MapNode<K, V>* temp = root;
+
+			while (root) {
+				store_nodes.push(root);
+				root = root->getLeft();
+			}
+
+			if (store_nodes.size() > 0) {
+				this->current = store_nodes.top();
+				store_nodes.pop();
+			}
+			else
+				current = nullptr;
+		}
+		Iterator& operator++() {
+			if (current->getRight()) {
+				store_nodes.push(current->getRight());
+				if (current->getRight()->getLeft())
+					store_nodes.push(current->getRight()->getLeft());
+			}
+			if (store_nodes.size() == 0) {
+				this->current = nullptr;
+				return *this;
+			}
+			current = store_nodes.top();
+			store_nodes.pop();
+			return *this;
+		}
+	};
 public:
 	Map();
 	void RotateLeft(MapNode<K, V>* node);
@@ -54,6 +89,8 @@ public:
 	void Insert(pair<K, V>& data);
 	void Print();
 	void InOrder(MapNode<K, V>* root);
+	unsigned int size();
+	unsigned int count(MapNode<K, V>* root);
 };
 
 
@@ -64,7 +101,7 @@ template<class K, class V>
 MapNode<K, V>::MapNode(K key, V value) {
 	this->key = key;
 	this->value = value;
-	parent = left = right = 0;
+	parent = left = right = nullptr;
 	color = RED;
 }
 
@@ -138,7 +175,7 @@ void MapNode<K, V>::setColor(Color color) {
 
 
 template<class K, class V>
-Map<K, V>::Map() :root(0) {}
+Map<K, V>::Map() :root(nullptr) {}
 
 template<class K, class V>
 void Map<K, V>::RotateLeft(MapNode<K, V>* node) {
@@ -180,58 +217,68 @@ void Map<K, V>::RotateRight(MapNode<K, V>* node) {
 
 template<class K, class V>
 void Map<K, V>::FixInsert(MapNode<K, V>* node) {
-	MapNode<K, V>* uncle = 0;
+	MapNode<K, V>* uncle = nullptr;
+	MapNode<K, V>* parent = nullptr;
+	MapNode<K, V>* grandparent = nullptr;
 
-	while (node->getParent()->getColor() == RED) {
+	while (node != NULL && node->getParent() != NULL && node->getParent()->getColor() == RED && node->getColor() != BLACK && node != this->root) {
 
-		if (node->getParent() == node->getParent()->getParent()->getRight()) {
-			uncle = node->getParent()->getParent()->getLeft();
+		parent = node->getParent();
+		grandparent = node->getParent()->getParent();
 
-			if (uncle->getColor() == RED) {
+		if (parent == grandparent->getRight()) {
+			uncle = grandparent->getLeft();
+
+			if (uncle != 0 && uncle->getColor() == RED) {
 				//case 1
 
 				uncle->setColor(BLACK);
-				node->getParent()->setColor(BLACK);
-				node->getParent()->getParent()->setColor(RED);
-				node = node->getParent()->getParent();
+				parent->setColor(BLACK);
+				grandparent->setColor(RED);
+				node = grandparent;
 			}
 
 			else {
 				//case 2
 
-				if (node == node->getParent()->getLeft()) {
-					node = node->getParent();
-					RotateRight(node);
+				if (node == parent->getLeft()) {
+					RotateRight(parent);
+					node = parent;
+					parent = node->getParent();
 				}
-				node->getParent()->setColor(BLACK);
-				node->getParent()->getParent()->setColor(RED);
-				RotateLeft(node->getParent()->getParent());
+				
+				RotateLeft(parent);
+				Color cl = parent->getColor();
+				parent->setColor(grandparent->getColor());
+				grandparent->setColor(cl);
+				node = parent;
 			}
 		}
 
 		else {
-			uncle = node->getParent()->getParent()->getRight();
+			uncle = grandparent->getRight();
 
-			if (uncle->getColor() == RED) { //mirror case 1
+			if (uncle != 0 && uncle->getColor() == RED) { //mirror case 1
 				uncle->setColor(BLACK);
-				node->getParent()->setColor(BLACK);
-				node->getParent()->getParent()->setColor(RED);
-				node = node->getParent()->getParent();
+				parent->setColor(BLACK);
+				grandparent->setColor(RED);
+				node = grandparent;
 			}
 
 			else {
-				if (node == node->getParent()->getRight()) {
-					node = node->getParent();
-					RotateLeft(node);
+				if (node == parent->getRight()) {
+					RotateLeft(parent);
+					node = parent;
+					parent = node->getParent();
 				}
-				node->getParent()->setColor(BLACK);
-				node->getParent()->getParent()->setColor(RED);
-				RotateRight(node->getParent()->getParent());
 
+				RotateRight(grandparent);
+				Color cl = parent->getColor();
+				parent->setColor(grandparent->getColor());
+				grandparent->setColor(cl);
+				node = parent;
 			}
 		}
-
-		if (node == this->root) break;
 	}
 
 	this->root->setColor(BLACK);
@@ -242,16 +289,14 @@ template<class K, class V>
 void Map<K, V>::Insert(pair<K, V>& data) {
 	MapNode<K, V>* new_node = new MapNode<K, V>(data.first, data.second);
 
-
-	cout << "inserted value";
 	if (!this->root) {
 		new_node->setColor(BLACK);
 		this->root = new_node;
 	}
 
 	else {
-		MapNode<K, V>* current = 0;
-		MapNode<K, V>* parent = 0;
+		MapNode<K, V>* current = nullptr;
+		MapNode<K, V>* parent = nullptr;
 		current = this->root;
 
 		while (current) { 
@@ -266,23 +311,35 @@ void Map<K, V>::Insert(pair<K, V>& data) {
 
 		if (!parent) this->root = new_node;
 
-		if (new_node->getKey() > parent->getKey())
+		else if (new_node->getKey() > parent->getKey())
 			parent->setRight(new_node);
 		else
 			parent->setLeft(new_node);
 
-		new_node->setColor(RED);
-		if (!new_node->getParent()) {
-			new_node->setColor(BLACK);
-			return;
-		}
-
-		if (!new_node->getParent()->getParent())
-			return;
-		cout << "we reached here\n";
 		FixInsert(new_node);
 	}
 }
+
+template<class K, class V>
+unsigned int  Map<K, V>::size() {
+	unsigned int count_node = 0;
+	if (this->root)
+		count_node = count(this->root);
+
+	return count_node;
+}
+
+template<class K, class V>
+unsigned int  Map<K, V>::count(MapNode<K, V>* root) {
+	unsigned int count_node = 1;
+	if (root->getLeft())
+		count_node += count(root->getLeft());
+	if (root->getRight())
+		count_node += count(root->getRight());
+
+	return count_node;
+}
+
 
 template<class K, class V>
 void Map<K, V>::Print() {
