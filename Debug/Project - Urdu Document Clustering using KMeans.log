@@ -1,2 +1,45 @@
 ﻿  main.cpp
-  Project - Urdu Document Clustering using KMeans.vcxproj -> D:\SEMESTER 3\DS_PROJECT\urdu-document-clustering-kmeans\Debug\Project - Urdu Document Clustering using KMeans.exe
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(42): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(60): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(70): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(81): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(84): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(85): warning C4244: 'argument': conversion from 'long double' to 'float', possible loss of data
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(86): warning C4244: 'argument': conversion from 'long double' to 'float', possible loss of data
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(100): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(118): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(120): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(121): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=long double
+          ]
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(152): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(166): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(169): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(170): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=long double
+          ]
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(171): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=long double
+          ]
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(190): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(200): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(211): warning C4244: 'argument': conversion from 'long double' to 'float', possible loss of data
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(235): warning C4018: '<': signed/unsigned mismatch
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(241): warning C4244: 'argument': conversion from 'const _Ty1' to 'float', possible loss of data
+          with
+          [
+              _Ty1=long double
+          ]
+d:\ds_project\urdu-document-clustering-kmeans\main.cpp(242): warning C4244: 'argument': conversion from 'const _Ty1' to 'float', possible loss of data
+          with
+          [
+              _Ty1=long double
+          ]
+  LINK : D:\DS_Project\urdu-document-clustering-kmeans\Debug\Project - Urdu Document Clustering using KMeans.exe not found or not built by the last incremental link; performing full link
+  Project - Urdu Document Clustering using KMeans.vcxproj -> D:\DS_Project\urdu-document-clustering-kmeans\Debug\Project - Urdu Document Clustering using KMeans.exe
