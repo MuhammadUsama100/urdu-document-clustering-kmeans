@@ -91,6 +91,8 @@ public:
 	void InOrder(MapNode<K, V>* root);
 	unsigned int size();
 	unsigned int count(MapNode<K, V>* root);
+	MapNode<K, V>* Search(MapNode<K, V>* root, K key);
+	V& operator[](const K& key);
 };
 
 
@@ -338,6 +340,27 @@ unsigned int  Map<K, V>::count(MapNode<K, V>* root) {
 		count_node += count(root->getRight());
 
 	return count_node;
+}
+
+
+template<class K, class V>
+MapNode<K, V>* Map<K, V>::Search(MapNode<K, V>* root, K key) {
+	if (!root)
+		return NULL;
+
+	if (root->getKey() == key)
+		return root;
+
+	if (root->getKey() < key)
+		Search(root->getRight(), key);
+	else
+		Search(root->getLeft(), key);
+}
+
+template<class K, class V>
+V& Map<K, V>::operator[](const K& key) {
+	MapNode<K, V>* search_node = Search(this->root, key);
+	return search_node->getValue();
 }
 
 
